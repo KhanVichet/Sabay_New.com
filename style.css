@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Hanuman:wght@300&family=Kdam+Thmor+Pro&family=Khmer&family=Koulen&family=Mukta:wght@300&family=Roboto+Condensed:ital,wght@0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Hanuman:wght@300&family=Kdam+Thmor+Pro&family=Khmer&family=Koulen&family=Mukta:wght@300&family=Odor+Mean+Chey&family=Roboto+Condensed:ital,wght@0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=DM+Sans&family=Hanuman:wght@300&family=Kdam+Thmor+Pro&family=Khmer&family=Koulen&family=Mukta:wght@300&family=Roboto+Condensed:ital,wght@0,700;1,300&display=swap');
+/* logo */
+.logo-bar{
+    background-color: black;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin: 10px 0px;
+}
+/* end logo */
+/* menu */
+.menu{
+    background-color: rgb(247, 51, 51);
+}
+.menu-bar ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-bar ul li{
+    padding: 10px 0px;
+    transition: 0.5s;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    margin:15px;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px;
+    font-family: 'Koulen', cursive;
+}
+.menu-bar ul li:first-child{
+    background-color:rgb(158, 47, 47) ;
+}
+.menu-bar ul li a:hover{
+    color: rgb(219, 215, 215);
+}
+/* end menu */
+/* menu for phone */
+.menu-phone{
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+    position: relative;
+}
+.menu-bar-mobile{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+}
+.menu-bar-phone{
+    display: flex;
+    line-height: 60px;
+}
+.hamburger{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.hamburger .line{
+    width: 30px;
+    height: 3px;
+    background: #eee;
+    margin: 6px 0;
+}
+.nav-bar{
+    position: absolute;
+    top: 60px;
+    height: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: black;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.nav-bar .home-logo{
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    margin-bottom: 5px;
+}
+.nav-bar .home-logo i{
+    position: absolute;
+    line-height: 40px;
+    left: 20px;
+    font-size: 20px;
+    color: #eee;
+}
+.nav-bar.active {
+    height: 400px;
+}
+.nav-bar .menu-mobile{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.nav-bar ul{
+    padding: 0 20px;
+    list-style: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+.nav-bar ul li:hover a{
+    background-color: red
+}
+.nav-bar.active ul{
+    opacity: 1;
+}
+.nav-bar ul li a{
+    width: 100%;
+    padding: 0px 20px;
+    font-size: 18px;
+    float: left;
+    color: #eee;
+    font-family: 'Odor Mean Chey', serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-bar .logo{
+    width: 100%;
+}
+.nav-bar .logo img{
+    width: 70px;
+    height: 30px;
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+.logo-mobile{
+    text-align: center;
+}
+.logo-mobile img{
+    width: 40px;
+    height: 40px;
+}
+.lozed{
+    text-align: right;
+}
+.lozed img{
+    width: 40px;
+    height: 40px;
+}
+/*end menu for phone */
+/* slide */
+.slide{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.slide-box{
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    position: relative;
+}
+.box-1{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(image/slide/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-2{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(image/slide/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-3{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(image/slide/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-4{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(image/slide/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide .slide-box .text p{
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    font-family: 'Odor Mean Chey', serif;
+}
+/* end slide */
+/* new post */
+.new-post{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.new-post .box{
+    position: relative;
+    padding: 0px;
+}
+.new-post .box .title p{
+    position: absolute;
+    transition: .5s;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Odor Mean Chey', serif;
+}
+.new-post .box span{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Odor Mean Chey', serif;
+}
+.type{
+    clip-path: polygon(0% 0%, 85% 0, 100% 100%, 100% 100%, 0% 100%);
+    background-color: orange;
+    color: white;
+    padding: 4px 30px 4px 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    font-family: 'Odor Mean Chey', serif;
+}
+.new-post .box .type-1{
+    background-color: blue;
+}
+.new-post .box:hover .title p{
+    bottom: 90px;
+    color: red;
+    font-family: 'Odor Mean Chey', serif;
+}
+.new-post .box .dec{
+    font: 18px;
+    color: #eee;
+    position: absolute;
+    bottom: -80px;
+    transition: 0.5s;
+    left: 30px;
+    font-family: 'Odor Mean Chey', serif;
+}
+.new-post .box:hover .dec{
+    bottom: 40px;
+}
+.new-post .box-1{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(image/new-post/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    transition: 0.4s;
+}
+.new-post .box-1:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(image/new-post/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.new-post .box-2{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(image/new-post/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.new-post .box-2:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(image/new-post/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.new-post .box-4{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(image/new-post/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.new-post .box-4:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(image/new-post/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.new-post .box-5{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(image/new-post/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.new-post .box-5:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(image/new-post/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.new{
+    border-top: 5px solid rgb(243, 42, 76);
+    box-shadow: 1px 0px 8px black;
+    padding: 20px 30px;
+}
+.new-box .image{
+    overflow: hidden;
+    background-color: black;
+}
+.new-box .image img{
+    width: 100%;
+    height: 50%;
+    transition: 0.2s;
+}
+.new-box .image:hover img{
+    transform: scale(0.95);
+}
+.new-box .detail p{
+    font-size: 12px;
+    font-family: 'Koulen', cursive;
+}
+.first-box{
+    background-color: green;
+    height: 100%;
+}
+.entertainment{
+    border-top: 5px solid rgb(243, 42, 76);
+    height: 100%;
+    box-shadow: 1px 0px 8px black;
+}
+.entertainment-box .image{
+    overflow: hidden;
+    background-color: black;
+}
+.entertainment-box .image img{
+    width: 100%;
+    height: 50%;
+    transition: 0.2s;
+}
+.entertainment .image:hover img{
+    transform: scale(0.95);
+}
+.entertainment .detail-en p{
+    font-size: 24px;
+    font-family: 'Koulen', cursive;
+    color:#eee;
+}
+.toptic{
+    clip-path: polygon(0% 0%, 85% 0, 100% 100%, 100% 100%, 0% 100%);
+    background-color: rgb(243, 42, 76);
+    color: white;
+    padding: 2px 20px 2px 10px;
+    width: 200px;
+}
+.toptic p{
+    padding: 5px;
+    margin: 0px;
+    font-size: 20px;
+    color: #eee;
+    font-family: 'Koulen', cursive;
+}
+.toptic i{
+    color: #eee;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/* end new post */
+/* footer */
+.footer{
+    background-color: black;
+    font-family: 'Koulen', cursive;
+    font-size: 14px;
+    padding: 10px;
+}
+.footer .image{
+    margin: 10px 0px;
+}
+.footer .image img{
+    width: 170px;
+}
+.copyright-title p{
+    color: rgba(213, 197, 197, 0.806);
+    margin: 10px 0px;
+}
+.copyright-title a{
+    text-decoration: none;
+    margin: 0px;
+}
+.copyright-title h4{
+    color: rgba(237, 231, 231, 0.896);
+}
+.footer .about-us .title{
+    height: 100px;
+}
+.footer .about-us .title h2{
+    line-height: 100px;
+    color: rgba(237, 231, 231, 0.896);
+}
+.footer .about-us .about-us-detail p{
+    font-family: 'Koulen', cursive;
+    font-size: 14px;
+    color: rgba(213, 197, 197, 0.806);
+}
+.footer .about-us .about h4{
+    color: rgba(237, 231, 231, 0.896);
+    font-family: 'Koulen', cursive;
+    font-size: 14px;
+    margin: 8px 0px;
+}
+.footer .about-us .about ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer .about-us .about ul li{
+    width: calc(100%/12);
+}
+.footer .about-us .about ul li a{
+    text-decoration: none;
+}
+.footer .about-us .about ul li a img{
+    width: 100%;
+    padding:0 4px;
+}
+.footer .socail .title{
+    height: 100px;
+}
+.footer .socail .title h2{
+    line-height: 100px;
+    color: rgba(237, 231, 231, 0.896);
+}
+.footer .socail .logo-socail ul{
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+.footer .socail .logo-socail ul li a{
+    text-decoration: none;
+    padding: 5px;
+}
+.footer .socail .logo-socail ul li a i{
+    font-size: 25px;
+}
+
+.footer .socail .content-us h4{
+    color: rgba(237, 231, 231, 0.896);
+    font-size: 16px;
+    padding: 5px 0px;
+    margin:10px 0;
+}
+.footer .socail .content-us p {
+    margin: 4px 0px;
+}
+.footer .socail .content-us p a{
+    text-decoration: none;
+    color: rgba(192, 187, 187, 0.881);
+    font-size: 14px;
+    margin: 0px;
+}
+/* end footer */
+
+/* mobile phone */
+@media (max-width: 575.98px) { 
+    .slide-box{
+        width:100%;
+    }
+    .new{
+        padding: 2px 5px;
+    }
+    .new-box .detail p{
+        font-size: 14px;
+    }
+    .toptic{
+        width: 150px;
+    }
+    .toptic p{
+        font-size: 16px;
+    }
+    .toptic i{
+        font-size: 16px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer .image img{
+        width: 150px;
+    }
+    .footer p{
+        margin: 1px;
+    }
+    .copyright-title h4{
+        font-size: 16px;
+    }
+    .footer .about-us .title{
+        height: 50px;
+    }
+    .footer .about-us .title h2{
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .footer .about-us .about-us-detail p{
+        font-size: 14px;
+        color: rgba(213, 197, 197, 0.806);
+    }
+    .footer .socail .logo-socail ul{
+        margin:0%  32%;
+    }
+    .footer .socail .title{
+        height: 50px;
+    }
+    .footer .socail .title h2{
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .footer .socail .content-us p{
+        margin: 1px;
+    }
+}
+
+/* landscape */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .toptic{
+        width: 150px;
+    }
+    .toptic p{
+        font-size: 16px;
+    }
+    .toptic i{
+        font-size: 16px;
+    }
+    /* footer */
+    .footer{
+        text-align: center;
+    }
+    .footer .image img{
+        width: 150px;
+    }
+    .footer p{
+        margin: 1px;
+        font-family: 'Battambang', cursive;
+    }
+    .copyright-title h4{
+        font-size: 16px;
+    }
+    .footer .about-us .title{
+        height: 50px;
+    }
+    .footer .about-us .title h2{
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .footer .about-us .about-us-detail p{
+        font-size: 14px;
+        color: rgba(213, 197, 197, 0.806);
+    }
+    .footer .socail .logo-socail ul{
+        margin: 0px 32%;
+    }
+    .footer .socail .title{
+        height: 50px;
+    }
+    .footer .socail .title h2{
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .footer .socail .content-us p{
+        margin: 1px;
+    }
+}
+
+/* ipad*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .logo-bar{
+        display: block;
+    }
+    .menu-bar ul li a{
+        font-size: 14px;
+        margin: 0px 10px;
+    }
+    .new-post .box .title p{
+        font-size: 14px;
+    }
+    .new-post .box .dec{
+        bottom: -130px;
+        font-size: 12px
+    }
+    .new-post .box span{
+        font-size: 12px;
+    }
+    .entertainment .detail-en p{
+        font-size: 22px;
+    }
+    .toptic{
+        width: 200px;
+    }
+    .toptic p{
+        font-size: 18px;
+    }
+    /* footer */
+    .footer .image img{
+        width: 150px;
+    }
+    .footer p{
+        margin: 1px;
+        font-family: 'Battambang', cursive;
+        font-size: 20px;
+    }
+    .copyright-title h4{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 'Battambang', cursive;
+    }
+    .footer .about-us .title{
+        height: 50px;
+    }
+    .footer .about-us .title h2{
+        line-height: 50px;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Battambang', cursive;
+    }
+    .footer .about-us .about-us-detail p{
+        font-size: 14px;
+        font-family: 'Battambang', cursive;
+        color: rgba(213, 197, 197, 0.806);
+    }
+    .footer .about-us .about h4{
+        font-family: 'Battambang', cursive;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .footer .about-us .about ul li{
+        width: calc(70%/12);
+    }
+    .footer .socail .title{
+        height: 50px;
+    }
+    .footer .socail .title h2{
+        line-height: 50px;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 'Battambang', cursive;
+    }
+    .footer .socail .content-us h4{
+        font-size: 24px;
+        font-family: 'Battambang', cursive;
+        font-weight: bold;
+        padding: 0px;
+        margin: 8px;
+    }
+    .footer .socail .content-us p{
+        font-size: 20px;
+        margin: 1px;
+        font-family: 'Battambang', cursive;
+    }
+}
+
+/* ipad pro */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .first-box{
+        height: 50%;
+    }
+    .new-post .box .title p{
+        font-size: 16px;
+    }
+    .new-post .box .dec{
+        bottom: -100px;
+        font-size: 14px
+    }
+    .new-post .box span{
+        font-size: 14px;
+    }
+}
+
+/* Laptop*/
+@media (min-width: 1200px) { 
+    
+}
